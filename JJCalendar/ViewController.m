@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyCalendarItem.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MyCalendarItem *item = [[MyCalendarItem alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, self.view.bounds.size.height/2)];
+    item.date = [NSDate date];
+    [self.view addSubview:item];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

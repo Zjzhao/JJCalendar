@@ -13,6 +13,8 @@
 		0C3221BC1E94DC6D0012E092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3221BA1E94DC6D0012E092 /* Main.storyboard */; };
 		0C3221BE1E94DC6D0012E092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3221BD1E94DC6D0012E092 /* Assets.xcassets */; };
 		0C3221C11E94DC6D0012E092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3221BF1E94DC6D0012E092 /* LaunchScreen.storyboard */; };
+		0C3221CE1E94DE4C0012E092 /* MyCalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3221CD1E94DE4C0012E092 /* MyCalendarItem.m */; };
+		0C3221D91E94F5510012E092 /* NSString+DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3221D81E94F5510012E092 /* NSString+DateFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0C3221BD1E94DC6D0012E092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C3221C01E94DC6D0012E092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C3221C21E94DC6D0012E092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3221CC1E94DE4C0012E092 /* MyCalendarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCalendarItem.h; path = Calendar/MyCalendarItem.h; sourceTree = "<group>"; };
+		0C3221CD1E94DE4C0012E092 /* MyCalendarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCalendarItem.m; path = Calendar/MyCalendarItem.m; sourceTree = "<group>"; };
+		0C3221D71E94F5510012E092 /* NSString+DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DateFormatter.h"; path = "Calendar/NSString+DateFormatter.h"; sourceTree = "<group>"; };
+		0C3221D81E94F5510012E092 /* NSString+DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DateFormatter.m"; path = "Calendar/NSString+DateFormatter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		0C3221B01E94DC6D0012E092 /* JJCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				0C3221C81E94DDF70012E092 /* Calendar */,
 				0C3221B41E94DC6D0012E092 /* AppDelegate.h */,
 				0C3221B51E94DC6D0012E092 /* AppDelegate.m */,
 				0C3221B71E94DC6D0012E092 /* ViewController.h */,
@@ -77,6 +84,25 @@
 				0C3221B21E94DC6D0012E092 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C3221C81E94DDF70012E092 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0C3221D61E94F5320012E092 /* util */,
+				0C3221CC1E94DE4C0012E092 /* MyCalendarItem.h */,
+				0C3221CD1E94DE4C0012E092 /* MyCalendarItem.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		0C3221D61E94F5320012E092 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				0C3221D71E94F5510012E092 /* NSString+DateFormatter.h */,
+				0C3221D81E94F5510012E092 /* NSString+DateFormatter.m */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +179,9 @@
 			files = (
 				0C3221B91E94DC6D0012E092 /* ViewController.m in Sources */,
 				0C3221B61E94DC6D0012E092 /* AppDelegate.m in Sources */,
+				0C3221CE1E94DE4C0012E092 /* MyCalendarItem.m in Sources */,
 				0C3221B31E94DC6D0012E092 /* main.m in Sources */,
+				0C3221D91E94F5510012E092 /* NSString+DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
